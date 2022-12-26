@@ -302,6 +302,7 @@ export class CameraPWA {
       this.showShutterOverlay = true;
       setTimeout(() => {
         this.showShutterOverlay = false;
+        // @ts-ignore
         resolve();
       }, 100);
     });
